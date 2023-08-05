@@ -116,4 +116,4 @@ class MyArray {
   }
 }
 
-const myArr1 = new MyArray(4, 12, 6);
+// const myArr1 = new MyArray(4, 12, 6);

@@ -67,7 +67,7 @@ function merger(queue1, queue2) {
   return newQueue;
 }
 
-const queue = new Queue("jnj", "mkmd", "aaa", '786', 98);
-console.log(queue);
-console.log(queue.peekOll());
+// const queue = new Queue("jnj", "mkmd", "aaa", '786', 98);
+// console.log(queue);
+// console.log(queue.peekOll());
 
