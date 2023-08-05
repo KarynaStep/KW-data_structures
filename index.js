@@ -29,12 +29,12 @@ const user = {
   },
   profession:'actor'
 }
-
+// const [, children2] = user.children
 const {
   privateInfo: {
     bday: { year },
   },
-  children: [, children2, , ],
+  // children: [, children2, , ,],
   contactInfo: {
     phone: { work },
     adress: { street, house },

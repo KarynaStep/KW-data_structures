@@ -110,11 +110,11 @@ class LinkedList {
     }
     if (item === this.head.data) {
       this.shift();
-      return "item delete " + item;
+      return item;
     }
     if (item === this.tail.data) {
       this.pop();
-      return "item delete " + item;
+      return item;
     }
     if (this.search(item) === null) {
       return null;
@@ -129,6 +129,15 @@ class LinkedList {
         current = current.next;
       }
     }
+
+    // for (const iterator of this) {
+    //   if (iterator.data === item) {
+    //     const nextItem = iterator.next
+    //     const prevItem = iterator.prev
+    //     nextItem.prev = prevItem
+    //     prevItem.next = nextItem
+    //   }
+    // }
 
     this.length--;
     return item;
@@ -203,13 +212,13 @@ class LinkedList {
   }
 }
 
-// const list = new LinkedList(1, [10, 20], { prop: "qwe" }, 87, "asd");
+const list = new LinkedList(1, [10, 20], { prop: "qwe" }, 87, "asd");
 // // const list = new LinkedList();
 // // const list2 = new LinkedList(1);
 // console.log(list.logDataLinkedList());
 // console.log(list.delete(87));
-// console.log(list.logDataLinkedList());
-// // console.log(list);
+// // console.log(list.logDataLinkedList());
+// console.log(list);
 
 // console.log(list);
 // // console.log(list.delete(98));
