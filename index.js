@@ -40,11 +40,11 @@ const {
     adress: { street, house },
   },
 } = user;
-console.log(year);
-console.log(children2);
-console.log(work);
-console.log(street);
-console.log(house);
+// console.log(year);
+// console.log(children2);
+// console.log(work);
+// console.log(street);
+// console.log(house);
 
 // const user2 = {
 //   privateInfo: {

@@ -1,18 +1,18 @@
 class IteratorLinkedQueue {
   constructor(queue) {
     this.queue = queue;
-    this.currentItem = 0;
+    this.currentItem = this.queue.head;
   }
   next() {
-    this.currentItem = this.currentItem ? this.currentItem++ : this.queue.head
-      return {
-        value: this.currentItem > this.queue.tail ? undefined : this.queue[`_${this.currentItem++}`],
-        done: this.currentItem > this.queue.tail
-      };
-    } 
+    return {
+      value:
+        this.currentItem > this.queue.tail
+          ? undefined
+          : this.queue[`_${this.currentItem++}`],
+      done: this.currentItem > this.queue.tail,
+    };
   }
-
-
+}
 
 class Queue {
   constructor(...args) {
@@ -67,7 +67,6 @@ function merger(queue1, queue2) {
   return newQueue;
 }
 
-// const queue = new Queue("jnj", "mkmd", "aaa", '786', 98);
-// console.log(queue);
-// console.log(queue.peekOll());
-
+const queue = new Queue("jnj", "mkmd", "aaa", "786", 98);
+console.log(queue);
+console.log(queue.peekOll());
