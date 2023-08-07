@@ -1,40 +1,40 @@
-'use strict';
+"use strict";
 
 // Створити змінні для року народження, імені другої дитини, робочого телефону, вулиця та номер будинку.
 // Використовуючи одну деструктуризацію.
 
 const user = {
-  id:1,
-  privateInfo:{
-    fname:"Brad",
-    sname:"Pitt",
-    bday:{
-      day:18,
-      month:12,
-      year:1963,
+  id: 1,
+  privateInfo: {
+    fname: "Brad",
+    sname: "Pitt",
+    bday: {
+      day: 18,
+      month: 12,
+      year: 1963,
     },
-  children: ['Helen', 'Alex', 'Georg', 'Anna'],
+    children: ["Helen", "Alex", "Georg", "Anna"],
   },
-  contactInfo:{
-    phone:{
-      work:'123-12-45',
-      mobile:'005-002-003',
+  contactInfo: {
+    phone: {
+      work: "123-12-45",
+      mobile: "005-002-003",
     },
-    adress:{
-      town:'ZP',
-      street:'12Avenu',
-      house:45,
+    adress: {
+      town: "ZP",
+      street: "12Avenu",
+      house: 45,
     },
-    mail:'brad@gmail.com'
+    mail: "brad@gmail.com",
   },
-  profession:'actor'
-}
+  profession: "actor",
+};
 // const [, children2] = user.children
 const {
   privateInfo: {
     bday: { year },
+    children: [, children2],
   },
-  children: [, children2, , ,],
   contactInfo: {
     phone: { work },
     adress: { street, house },
@@ -45,8 +45,6 @@ console.log(children2);
 console.log(work);
 console.log(street);
 console.log(house);
-
-
 
 // const user2 = {
 //   privateInfo: {
